@@ -202,7 +202,7 @@ def resolve_location_to_iata(location: str):
     Examples:
     india -> IN
     Japan -> NRT
-    Dhaka -> DAC
+    India -> DAC
     Tokyo -> NRT
     DAC -> DAC
     """

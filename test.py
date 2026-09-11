@@ -1,8 +1,18 @@
-import asyncio
-# from mcp_client_test import get_all_tools, tavily_mcp_search
-from mcp_client import get_all_tools
+from backend import run_travel_agent
 
+result = run_travel_agent("Plan a 5 days Japan trip from India under 2 lakhs")
 
+print("\n--- 1. FLIGHT RESULTS ---")
+print(result["flight_results"])
 
-if __name__ == "__main__":
-    asyncio.run(get_all_tools())
+print("\n--- 2. HOTEL RESULTS ---")
+print(result["hotel_results"])
+
+print("\n--- 3. WEATHER RESULTS ---")
+print(result["weather_results"])
+
+print("\n--- 4. BUDGET RESULTS ---")
+print(result["budget_results"])
+
+print("\n--- 5. DRAFT ITINERARY ---")
+print(result["itinerary"])
